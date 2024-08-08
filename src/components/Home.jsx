@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div className="container-fluid p-0">
             <Header />
-            <div className="row">
+            <div className="row p-4">
                 <div className="col-12 col-md-4">
                     <CardPizza
                         name="Pizza Napolitana"
