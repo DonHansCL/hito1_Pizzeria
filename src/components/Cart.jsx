@@ -1,12 +1,12 @@
 import React from 'react'
-import pizzaCart from '../pizzaCart'
-import { useState } from 'react'
+// import pizzaCart from '../pizzaCart'
+import { pizzaCart } from '../pizzas'
 import  '../Cart.css'
 
 const Cart = ({cart, setCart}) => {
 
     // se trae desde el app.jsx
-    // const [cart, setCart] = useState(pizzaCart)
+    // const [cart, setCart] = useState([])
 
     const increaseQuantity = (id) => {
         setCart(cart.map((pizza) =>

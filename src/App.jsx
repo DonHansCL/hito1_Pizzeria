@@ -6,7 +6,8 @@ import Home from './components/Home'
 import './App.css'
 import Login from "./components/Login"
 import Cart from "./components/Cart"
-import pizzaCart from "./pizzaCart"
+// import pizzaCart from "./pizzaCart"
+import { pizzaCart } from "./pizzas"
 import { useState } from "react"
 
 
@@ -24,7 +25,7 @@ const App = () => {
     <div className="app-container">
       <Navbar totalQuantity={totalQuantity} totalPrice={totalPrice}/>
       <main className="main-content">
-      {/* <Home /> */}
+      <Home />
       {/* <Register/>
       <Login/>  */}
       </main>   

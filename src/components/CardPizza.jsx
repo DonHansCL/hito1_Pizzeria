@@ -2,7 +2,7 @@ import React from "react";
 
 const CardPizza = ({pizza}) => {
     return (
-        <div >
+        
             <div className="card mb-4">
                 <img src={pizza.img} alt={pizza.name} className="card-img-top rounded mx-auto d-block" />
                 <div className="card-body">
@@ -20,7 +20,7 @@ const CardPizza = ({pizza}) => {
                     </div>
                 </div>
             </div>
-        </div>
+        
     )
 }
 

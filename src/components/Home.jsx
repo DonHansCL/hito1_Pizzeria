@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import CardPizza from './CardPizza';
 import pizzas from '../pizzas'
+// import  pizzaCart  from "../pizzas";
 
 const Home = () => {
 
@@ -13,7 +14,7 @@ const Home = () => {
 
             <div className="row">
                 {pizzas.map((pizza) => {
-                    console.log(pizza)
+                    // console.log(pizza)
                     return (
                         <div key={pizza.id} className="col-md-4 col-sm-6 mb-4">
                             <CardPizza key={pizza.id} pizza={pizza} />
