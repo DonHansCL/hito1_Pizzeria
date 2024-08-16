@@ -52,3 +52,9 @@ body, html {
     border-radius: 10px;
     background-color: #fff;
 }
+
+
+.card {
+  max-width: 300px; /* Ancho máximo de cada tarjeta */
+  margin: 0 auto; /* Centrando la tarjeta */
+}

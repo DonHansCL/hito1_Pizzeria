@@ -1,12 +1,28 @@
 import React from "react";
 import Header from "./Header";
 import CardPizza from './CardPizza';
+import pizzas from '../pizzas'
 
 const Home = () => {
+
+    // const [cart, setCart] = useState([])
+
     return (
         <div className="container-fluid p-0">
             <Header />
-            <div className="row p-4">
+
+            <div className="row">
+                {pizzas.map((pizza) => {
+                    console.log(pizza)
+                    return (
+                        <div key={pizza.id} className="col-md-4 col-sm-6 mb-4">
+                            <CardPizza key={pizza.id} pizza={pizza} />
+                        </div>
+                    )
+                })}
+            </div>
+
+            {/* <div className="row p-4">
                 <div className="col-12 col-md-4">
                     <CardPizza
                         name="Pizza Napolitana"
@@ -35,9 +51,9 @@ m/o/pizzeria%2Fpizza-1239077_640_com.jpg?alt=media&token=e7cde87a-08d5-4040-
 ac54-90f6c31eb3e3"
                     />
                 </div>
-            </div>
+            </div> */}
         </div>
-    ) 
+    )
 }
 
 export default Home;
